@@ -134,7 +134,7 @@ unitTest <- function() {
         matInv <- cacheSolve(cm)
         print(matInv); print("------------")
         
-        print("cacheSolve(cm) with new matrix return value (2st call):")
+        print("cacheSolve(cm) with new matrix return value (2nd call):")
         matInv <- cacheSolve(cm)
         print(matInv); print("------------")
         
@@ -212,7 +212,7 @@ unitTest <- function() {
 ## [3,] -0.2951309429  0.4225399 -0.5805676 0.6449514
 ## [4,] -0.3727309545 -0.3864844  0.1889229 0.1025299
 ## [1] "------------"
-## [1] "cacheSolve(cm) with new matrix return value (2st call):"
+## [1] "cacheSolve(cm) with new matrix return value (2nd call):"
 ## getting cached matrix inverse
 ##               [,1]       [,2]       [,3]      [,4]
 ## [1,]  0.0001665084  0.4063776  0.5117268 0.3041435
