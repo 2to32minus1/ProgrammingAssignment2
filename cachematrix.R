@@ -68,13 +68,21 @@ cacheSolve <- function(x, ...) {
         
         ## Return a matrix that is the inverse of 'x'
         xInv <- x$getInverse()
+        
+        ## If not NULL, inverse already computed and cached
+        ## So return cached inverse matrix
         if (!is.null(xInv)) {
                 message("getting cached matrix inverse")
                 return(xInv)
         }
+        
+        ## If reach here (is NULL), inverse not yet computed
+        ## Compute inverse and cache its value
         xMatrix <- x$get()
         xInv <- solve(xMatrix, ...)
         x$setInverse(xInv)
+        
+        ## Return just-computed inverse matrix
         xInv
 }
 
