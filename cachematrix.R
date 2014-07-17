@@ -2,6 +2,8 @@
 ## This file contains 2 functions which demonstrate caching data using
 ## R's Scoping Rules (closures).
 ##
+## This file also contains a 3rd function which is a simple unit test.
+##
 ## Functions:
 ## makeCacheMatrix: Holder for a matrix and its inverse
 ## cacheSolve:      Helper function for accesing inverse matrix
@@ -15,6 +17,7 @@
 ##             matrix using a closure.
 ##
 ## Usage:      myMat <- makeCacheMatrix(<some matrix>)
+##
 ## Public Functions:
 ## get:        Returns the enclosed matrix
 ## set:        Sets the enclosed matrix and sets invers to NULL
